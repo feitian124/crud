@@ -6,3 +6,5 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
       url: jdbc:mysql://localhost:3306/crud?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
 beetlsql.basePackage: com.yunnuy.crud.dao
+beetl.suffix: html
+beetl-beetlsql.dev: true
