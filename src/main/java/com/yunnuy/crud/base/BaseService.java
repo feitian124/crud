@@ -120,7 +120,7 @@ public interface BaseService<T> {
 	 * @param entity
 	 * @return
 	 */
-	<T> T templateOne(T entity);
+	T templateOne(T entity);
 
 	List<T> template(T entity,int start,int size);
 	

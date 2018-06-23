@@ -96,7 +96,7 @@ public class BaseServiceImpl<T> implements BaseService<T> {
 	}
 
 	@Override
-	public <T> T templateOne(T entity) {
+	public T templateOne(T entity) {
 		return baseMapper.templateOne(entity);
 	}
 
