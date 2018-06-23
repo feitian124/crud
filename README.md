@@ -18,3 +18,6 @@ mmvc框架和后台 no-sql 的流行， json 的使用量激增，要拥抱这�
 - spring boot and spring mvc
 - mysql and druid
 - beetl and beetlsql
+
+## 特性
+1. 类似 BaseMapper， 增加 BaseService
