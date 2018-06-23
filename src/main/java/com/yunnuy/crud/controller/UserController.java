@@ -8,17 +8,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.yunnuy.crud.model.User;
-import com.yunnuy.crud.service.IUserService;
+import com.yunnuy.crud.service.UserService;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
 	
 	@Autowired
-	IUserService userService;
+	UserService userService;
 
 	@GetMapping("/select")
 	public List<User> select(String name) {
 		return userService.select(name);
+	}
+	
+	@GetMapping("/index")
+	public List<User> index() {
+		return userService.all();
 	}
 }
